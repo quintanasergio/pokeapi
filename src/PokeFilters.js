@@ -21,7 +21,7 @@ export default function Pokefilters({typeFilter, typeFilter2, textFilter, update
     typeOptions.unshift(<option key='all'>All</option>);
     
     return (
-        <div class="search-filters">
+        <div className="search-filters">
             <input type="text" value={textFilter} onChange={(e)=>updateTextFilter(e.target.value)}></input>
             <select value={typeFilter} onChange={(e)=>updateTypeFilter(e.target.value)}>{typeOptions}</select>
             <select value={typeFilter2} onChange={(e)=>updateTypeFilter2(e.target.value)}>{typeOptions}</select>

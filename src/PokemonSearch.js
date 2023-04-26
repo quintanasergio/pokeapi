@@ -10,7 +10,7 @@ export default function PokemonSearch({pokemonList}){
     function filterPokemon(){
         let filteredList = pokemonList.filter(pokemon=>pokemon.type.includes(typeFilter))
         .filter(pokemon=>pokemon.type.includes(typeFilter2))
-        .filter(pokemon => pokemon.name.includes(textFilter));
+        .filter(pokemon => pokemon.name.includes(textFilter.toLowerCase()));
         return filteredList;
     }
     function updateTextFilter(newText){
